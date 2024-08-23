@@ -172,8 +172,6 @@ public function Get_Rules()
 
 Returns an array with the server rules, where the key is the rule name and the value is the value associated with that rule. This method also uses a retry system to ensure data retrieval.
 
-Sure, here is the translation of the text into English:
-
 ## 🔍 Technical Details
 
 ### Retry System
