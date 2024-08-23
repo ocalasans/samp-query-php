@@ -4,15 +4,15 @@
 
 ### 🌐 Linguagens
 
-- **English** > [README](Other%20Languages/English/README.md) / [Code](Other%20Languages/English/samp-query-php).
-- **Español** > [README](Other%20Languages/Espanol/README.md) / [Código](Other%20Languages/Espanol/samp-query-php).
-- **Polski** > [README](Other%20Languages/Polski/README.md) / [Kod](Other%20Languages/Polski/samp-query-php).
-- **Türk** > [README](Other%20Languages/Turk/README.md) / [Kod](Other%20Languages/Turk/samp-query-php).
-- **Deutsch** > [README](Other%20Languages/Deutsch/README.md) / [Code](Other%20Languages/Deutsch/samp-query-php).
-- **Русский** > [README](Other%20Languages/Русский/README.md) / [Код](Other%20Languages/Русский/samp-query-php).
-- **Français** > [README](Other%20Languages/Francais/README.md) / [Code](Other%20Languages/Francais/samp-query-php).
-- **Italiano** > [README](Other%20Languages/Italiano/README.md) / [Codice](Other%20Languages/Italiano/samp-query-php).
-- **Svensk** > [README](Other%20Languages/Svensk/README.md) / [Koda](Other%20Languages/Svensk/samp-query-php).
+- **English** > [README](Other%20Languages/English/README.md) / [Code](Other%20Languages/English/samp-query.php).
+- **Español** > [README](Other%20Languages/Espanol/README.md) / [Código](Other%20Languages/Espanol/samp-query.php).
+- **Polski** > [README](Other%20Languages/Polski/README.md) / [Kod](Other%20Languages/Polski/samp-query.php).
+- **Türk** > [README](Other%20Languages/Turk/README.md) / [Kod](Other%20Languages/Turk/samp-query.php).
+- **Deutsch** > [README](Other%20Languages/Deutsch/README.md) / [Code](Other%20Languages/Deutsch/samp-query.php).
+- **Русский** > [README](Other%20Languages/Русский/README.md) / [Код](Other%20Languages/Русский/samp-query.php).
+- **Français** > [README](Other%20Languages/Francais/README.md) / [Code](Other%20Languages/Francais/samp-query.php).
+- **Italiano** > [README](Other%20Languages/Italiano/README.md) / [Codice](Other%20Languages/Italiano/samp-query.php).
+- **Svensk** > [README](Other%20Languages/Svensk/README.md) / [Koda](Other%20Languages/Svensk/samp-query.php).
 
 ## 📋 Sumário
 
