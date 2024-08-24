@@ -216,7 +216,7 @@ $server->setTimeouts([
 
 ### Messages d'erreur et gestion des exceptions
 
-L'API est conçue pour capturer les erreurs et les échecs de connexion, en renvoyant des messages d'erreur clairs en cas d'échec. Par exemple, si un serveur ne peut pas être atteint, l'API renvoie `null` pour des méthodes telles que `Obtenir_Informations()` et `Obtenir_Regles()`.
+L'API est conçue pour capturer les erreurs et les échecs de connexion, en renvoyant des messages d'erreur clairs en cas d'échec. Par exemple, si un serveur ne peut pas être atteint, l'API renvoie `null` pour des méthodes telles que `Obtenir_Informations()`, `Obtenir_Joueurs_0`, `Obtenir_Joueurs_1` et `Obtenir_Regles()`.
 
 ```php
 if ($server->Obtenir_Informations() === null) {
