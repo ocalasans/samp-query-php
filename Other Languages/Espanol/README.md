@@ -217,7 +217,7 @@ $server->setTimeouts([
 
 ### Mensajes de error y manejo de excepciones
 
-La API está diseñada para capturar errores y fallos de conexión, devolviendo mensajes de error claros en caso de fallos. Por ejemplo, si un servidor no puede ser alcanzado, la API devuelve `null` para métodos como `Obtener_Informacion()` y `Obtener_Reglas()`.
+La API está diseñada para capturar errores y fallos de conexión, devolviendo mensajes de error claros en caso de fallos. Por ejemplo, si un servidor no puede ser alcanzado, la API devuelve `null` para métodos como `Obtener_Informacion()`, `Obtener_Jugadores_0`, `Obtener_Jugadores_1` y `Obtener_Reglas()`.
 
 ```php
 if ($server->Obtener_Informacion() === null) {
