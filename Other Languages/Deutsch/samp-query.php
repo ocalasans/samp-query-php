@@ -130,7 +130,11 @@ class samp_query
         return $this->attempt(function()
         {
             fwrite($this->socket, $this->buildPacket('c'));
-            fread($this->socket, 11);
+            //
+            if(!fread($this->socket, 11))
+            {
+                return null;
+            }
             //
             $playerCount = ord(fread($this->socket, 2));
             $players = [];
@@ -156,7 +160,11 @@ class samp_query
         return $this->attempt(function()
         {
             fwrite($this->socket, $this->buildPacket('d'));
-            fread($this->socket, 11);
+            //
+            if(!fread($this->socket, 11))
+            {
+                return null;
+            }
             //
             $playerCount = ord(fread($this->socket, 2));
             $detailedPlayers = [];
