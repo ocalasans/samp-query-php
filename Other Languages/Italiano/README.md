@@ -216,7 +216,7 @@ $server->setTimeouts([
 
 ### Messaggi di errore e gestione delle eccezioni
 
-L'API è progettata per catturare errori e fallimenti di connessione, restituendo messaggi di errore chiari in caso di problemi. Ad esempio, se un server non può essere raggiunto, l'API restituisce `null` per metodi come `Ottenere_Informazioni()` e `Ottenere_Regole()`.
+L'API è progettata per catturare errori e fallimenti di connessione, restituendo messaggi di errore chiari in caso di problemi. Ad esempio, se un server non può essere raggiunto, l'API restituisce `null` per metodi come `Ottenere_Informazioni()`, `Ottenere_Giocatori_0`, `Ottenere_Giocatori_1` e `Ottenere_Regole()`.
 
 ```php
 if ($server->Ottenere_Informazioni() === null) {
