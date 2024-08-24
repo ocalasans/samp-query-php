@@ -217,7 +217,7 @@ $server->setTimeouts([
 
 ### Error Messages and Exception Handling
 
-The API is designed to capture errors and connection failures, returning clear error messages in case of failures. For instance, if a server cannot be reached, the API returns `null` for methods such as `Get_Information()` and `Get_Rules()`.
+The API is designed to capture errors and connection failures, returning clear error messages in case of failures. For instance, if a server cannot be reached, the API returns `null` for methods such as `Get_Information()`, `Get_Players_0`, `Get_Players_1` and `Get_Rules()`.
 
 ```php
 if ($server->Get_Information() === null) {
