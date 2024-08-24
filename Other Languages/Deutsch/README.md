@@ -217,7 +217,7 @@ $server->setTimeouts([
 
 ### Fehlermeldungen und Ausnahmebehandlung
 
-Die API ist so gestaltet, dass sie Fehler und Verbindungsprobleme erfasst und im Falle von Fehlern klare Fehlermeldungen zurückgibt. Wenn beispielsweise ein Server nicht erreicht werden kann, gibt die API `null` für Methoden wie `Abfragen_Informationen()` und `Abfragen_Regeln()` zurück.
+Die API ist so gestaltet, dass sie Fehler und Verbindungsprobleme erfasst und im Falle von Fehlern klare Fehlermeldungen zurückgibt. Wenn beispielsweise ein Server nicht erreicht werden kann, gibt die API `null` für Methoden wie `Abfragen_Informationen()`, `Abfragen_Spieler_0`, `Abfragen_Spieler_1` und `Abfragen_Regeln()` zurück.
 
 ```php
 if ($server->Abfragen_Informationen() === null) {
