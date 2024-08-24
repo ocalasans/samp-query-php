@@ -216,7 +216,7 @@ $server->setTimeouts([
 
 ### Hata Mesajları ve İstisna Yönetimi
 
-API, hataları ve bağlantı kesilmelerini yakalamak üzere tasarlanmıştır ve başarısızlık durumunda açık hata mesajları döndürür. Örneğin, bir sunucuya ulaşılamazsa, API `Al_Bilgiler()` ve `Al_Kurallar()` gibi yöntemler için `null` döndürür.
+API, hataları ve bağlantı kesilmelerini yakalamak üzere tasarlanmıştır ve başarısızlık durumunda açık hata mesajları döndürür. Örneğin, bir sunucuya ulaşılamazsa, API `Al_Bilgiler()`, `Al_Oyuncular_0`, `Al_Oyuncular_1` ve `Al_Kurallar()` gibi yöntemler için `null` döndürür.
 
 ```php
 if ($server->Al_Bilgiler() === null) {
