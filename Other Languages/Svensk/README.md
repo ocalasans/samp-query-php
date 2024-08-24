@@ -216,7 +216,7 @@ $server->setTimeouts([
 
 ### Felmeddelanden och undantagshantering
 
-API: n är utformad för att fånga fel och anslutningsproblem, och returnerar tydliga felmeddelanden vid misslyckanden. Till exempel, om en server inte kan nås, returnerar API: n `null` för metoder som `Hamta_Information()` och `Hamta_Regler()`.
+API: n är utformad för att fånga fel och anslutningsproblem, och returnerar tydliga felmeddelanden vid misslyckanden. Till exempel, om en server inte kan nås, returnerar API: n `null` för metoder som `Hamta_Information()`, `Hamta_Spelare_0`, `Hamta_Spelare_1` och `Hamta_Regler()`.
 
 ```php
 if ($server->Hamta_Information() === null) {
