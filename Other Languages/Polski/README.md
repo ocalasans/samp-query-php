@@ -216,7 +216,7 @@ $server->setTimeouts([
 
 ### Komunikaty o błędach i obsługa wyjątków
 
-API jest zaprojektowane do przechwytywania błędów i awarii połączenia, zwracając jasne komunikaty o błędach w przypadku awarii. Na przykład, jeśli serwer nie może być osiągnięty, API zwraca `null` dla metod takich jak `Uzyskac_Informacja()` i `Uzyskaj_Zasady()`.
+API jest zaprojektowane do przechwytywania błędów i awarii połączenia, zwracając jasne komunikaty o błędach w przypadku awarii. Na przykład, jeśli serwer nie może być osiągnięty, API zwraca `null` dla metod takich jak `Uzyskac_Informacja()`, `Uzyskac_Graczy_0`, `Uzyskac_Graczy_1` i `Uzyskaj_Zasady()`.
 
 ```php
 if ($server->Uzyskac_Informacja() === null) {
