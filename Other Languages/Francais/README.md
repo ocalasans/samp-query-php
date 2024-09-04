@@ -62,12 +62,12 @@ git clone https://github.com/ocalasans/samp-query-php.git
 
 ## 🚀 Utilisation
 
-Incluez le fichier `samp_query.php` dans votre projet et instanciez la classe `samp_query` en passant l'adresse IP et le port du serveur **SA-MP** que vous souhaitez consulter.
+Incluez le fichier `samp-query.php` dans votre projet et instanciez la classe `samp_query` en passant l'adresse IP et le port du serveur **SA-MP** que vous souhaitez consulter.
 
 ### Exemple d'utilisation de base
 
 ```php
-require 'samp_query.php';
+require 'samp-query.php';
 
 $server = new samp_query('127.0.0.1', 7777);
 
@@ -91,7 +91,7 @@ if ($server->Est_EnLigne()) {
 ### Exemple avec plusieurs serveurs
 
 ```php
-require 'samp_query.php';
+require 'samp-query.php';
 
 $serveurs = [
     ['ip' => '127.0.0.1', 'porte' => 7777],
