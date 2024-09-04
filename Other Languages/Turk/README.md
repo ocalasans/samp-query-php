@@ -62,12 +62,12 @@ git clone https://github.com/ocalasans/samp-query-php.git
 
 ## 🚀 Kullanım
 
-Projenize `samp_query.php` dosyasını dahil edin ve sorgulamak istediğiniz SA-MP sunucusunun IP adresini ve portunu belirterek `samp_query` sınıfını örnekleyin.
+Projenize `samp-query.php` dosyasını dahil edin ve sorgulamak istediğiniz SA-MP sunucusunun IP adresini ve portunu belirterek `samp_query` sınıfını örnekleyin.
 
 ### Temel kullanım örneği
 
 ```php
-require 'samp_query.php';
+require 'samp-query.php';
 
 $server = new samp_query('127.0.0.1', 7777);
 
@@ -91,7 +91,7 @@ if ($server->Cevrimici()) {
 ### Birden fazla sunucu örneği
 
 ```php
-require 'samp_query.php';
+require 'samp-query.php';
 
 $sunucular = [
     ['ip' => '127.0.0.1', 'kapı' => 7777],
