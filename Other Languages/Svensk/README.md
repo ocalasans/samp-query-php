@@ -62,12 +62,12 @@ git clone https://github.com/ocalasans/samp-query-php.git
 
 ## 🚀 Användning
 
-Inkludera filen `samp_query.php` i ditt projekt och instansiera klassen `samp_query` genom att ange IP-adressen och porten för **SA-MP**-servern du vill fråga.
+Inkludera filen `samp-query.php` i ditt projekt och instansiera klassen `samp_query` genom att ange IP-adressen och porten för **SA-MP**-servern du vill fråga.
 
 ### Enkel användningsexempel
 
 ```php
-require 'samp_query.php';
+require 'samp-query.php';
 
 $server = new samp_query('127.0.0.1', 7777);
 
@@ -91,7 +91,7 @@ if ($server->Ar_Online()) {
 ### Exempel med flera servrar
 
 ```php
-require 'samp_query.php';
+require 'samp-query.php';
 
 $servrar = [
     ['ip' => '127.0.0.1', 'porten' => 7777],
