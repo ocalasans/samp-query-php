@@ -19,7 +19,7 @@
     - [Lingue](#lingue)
   - [Sommario](#sommario)
   - [Caratteristiche](#caratteristiche)
-  - [🛠Installazione](#️installazione)
+  - [Installazione](#️installazione)
   - [Uso](#uso)
     - [Esempio di utilizzo base](#esempio-di-utilizzo-base)
     - [Esempio con più server](#esempio-con-più-server)
