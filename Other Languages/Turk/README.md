@@ -2,7 +2,7 @@
 
 **samp-query-php**, **SA-MP (San Andreas Multiplayer)** sunucularından bilgi almak ve sorgulama yapmak için geliştirilmiş bir **PHP** **API**'sidir. Bu **API**, bir sunucunun çevrimiçi olup olmadığını kontrol etmenizi, ping değerini, sunucu hakkında temel ve ayrıntılı bilgileri, bağlı oyuncuları ve sunucu kurallarını almanızı sağlar. **API** ayrıca verilerin güvenilir bir şekilde elde edilmesini sağlamak için otomatik deneme sistemi içerir.
 
-### 🌐 Diller
+### Diller
 
 - **Português** > [README](https://github.com/ocalasans/samp-query-php) / [Código](https://github.com/ocalasans/samp-query-php/blob/main/samp-query.php).
 - **English** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English) / [Code](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English/samp-query.php).
@@ -14,16 +14,16 @@
 - **Italiano** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano) / [Codice](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk) / [Koda](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk/samp-query.php).
 
-## 📋 Özet
+## Özet
 - [samp-query-php](#samp-query-php)
-    - [🌐 Diller](#-diller)
-  - [📋 Özet](#-özet)
-  - [🎯 Özellikler](#-özellikler)
-  - [🛠️ Kurulum](#️-kurulum)
-  - [🚀 Kullanım](#-kullanım)
+    - [Diller](#diller)
+  - [Özet](#özet)
+  - [Özellikler](#özellikler)
+  - [Kurulum](#️kurulum)
+  - [Kullanım](#kullanım)
     - [Temel kullanım örneği](#temel-kullanım-örneği)
     - [Birden fazla sunucu örneği](#birden-fazla-sunucu-örneği)
-  - [🧩 Mevcut Yöntemler](#-mevcut-yöntemler)
+  - [Mevcut Yöntemler](#mevcut-yöntemler)
     - [Sunucunun çevrimdışı olup olmadığını kontrol etme](#sunucunun-çevrimdışı-olup-olmadığını-kontrol-etme)
     - [Sunucunun ping'ini alma](#sunucunun-pingini-alma)
     - [Sunucu bilgilerini alma](#sunucu-bilgilerini-alma)
@@ -31,17 +31,17 @@
       - [Temel Liste](#temel-liste)
       - [Ayrıntılı Liste](#ayrıntılı-liste)
     - [Sunucu kurallarını alma](#sunucu-kurallarını-alma)
-  - [🔍 Teknik Detaylar](#-teknik-detaylar)
+  - [Teknik Detaylar](#teknik-detaylar)
     - [Deneme Sistemi](#deneme-sistemi)
     - [Yapılandırılabilir Zaman Aşımı](#yapılandırılabilir-zaman-aşımı)
     - [Paket Oluşturma](#paket-oluşturma)
     - [Veri Dönüşümü](#veri-dönüşümü)
-  - [🔧 Özelleştirmeler ve Yapılandırmalar](#-özelleştirmeler-ve-yapılandırmalar)
+  - [Özelleştirmeler ve Yapılandırmalar](#özelleştirmeler-ve-yapılandırmalar)
     - [Gelişmiş Zaman Aşımı Ayarları](#gelişmiş-zaman-aşımı-ayarları)
     - [Hata Mesajları ve İstisna Yönetimi](#hata-mesajları-ve-i̇stisna-yönetimi)
-  - [ℹ️ İletişim Bilgileri](#ℹ️-i̇letişim-bilgileri)
+  - [İletişim Bilgileri](#i̇letişim-bilgileri)
 
-## 🎯 Özellikler
+## Özellikler
 
 - Hızlı ve verimli SA-MP sunucu sorgulama.
 - Sunucudan temel ve detaylı bilgi alma.
@@ -52,7 +52,7 @@
 - Sunucu bilgileri için çok dilli destek.
 - Oyuncu görüntüleme için kişiselleştirilmiş sınır.
 
-## 🛠️ Kurulum
+## Kurulum
 
 Yerel makinenize depoyu kopyalayın:
 
@@ -60,7 +60,7 @@ Yerel makinenize depoyu kopyalayın:
 git clone https://github.com/ocalasans/samp-query-php.git
 ```
 
-## 🚀 Kullanım
+## Kullanım
 
 Projenize `samp-query.php` dosyasını dahil edin ve sorgulamak istediğiniz SA-MP sunucusunun IP adresini ve portunu belirterek `samp_query` sınıfını örnekleyin.
 
@@ -110,7 +110,7 @@ foreach ($sunucular as $veri) {
 }
 ```
 
-## 🧩 Mevcut Yöntemler
+## Mevcut Yöntemler
 
 ### Sunucunun çevrimdışı olup olmadığını kontrol etme
 
@@ -171,7 +171,7 @@ public function Al_Kurallar()
 
 Kural adı anahtar ve kuralın değeri ile birlikte sunucu kurallarını içeren bir dizi döner. Bu yöntem, verilerin elde edilmesini sağlamak için deneme sistemini de kullanır.
 
-## 🔍 Teknik Detaylar
+## Teknik Detaylar
 
 ### Deneme Sistemi
 
@@ -200,7 +200,7 @@ private function toInt($data)
 
 Yöntem, dört ayrı tam sayı parçasını orijinal formata dönüştürmek için bit düzeyinde işlemler kullanır.
 
-## 🔧 Özelleştirmeler ve Yapılandırmalar
+## Özelleştirmeler ve Yapılandırmalar
 
 ### Gelişmiş Zaman Aşımı Ayarları
 
@@ -224,9 +224,9 @@ if ($server->Al_Bilgiler() === null) {
 }
 ```
 
-## ℹ️ İletişim Bilgileri
+## İletişim Bilgileri
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
 Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Topluluk: [SA-MP Programming Community©](https://abre.ai/samp-spc)
+Topluluk: [SA-MP Programming Community](https://abre.ai/samp-spc)
