@@ -2,7 +2,7 @@
 
 **samp-query-php** är en **API** i **PHP** utvecklad för att fråga och hämta information från **SA-MP (San Andreas Multiplayer)** servrar. Denna **API** gör det möjligt att kontrollera om en server är online, få ping, grundläggande och detaljerad information om servern, anslutna spelare och serverregler. **API**:n inkluderar också ett automatiskt försöksystem för att säkerställa att data hämtas på ett tillförlitligt sätt.
 
-### 🌐 Språk
+### Språk
 
 - **Português** > [README](https://github.com/ocalasans/samp-query-php) / [Código](https://github.com/ocalasans/samp-query-php/blob/main/samp-query.php).
 - **English** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English) / [Code](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English/samp-query.php).
@@ -14,16 +14,16 @@
 - **Français** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Francais) / [Code](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Francais/samp-query.php).
 - **Italiano** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano) / [Codice](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano/samp-query.php).
 
-## 📋 Sammanfattning
+## Sammanfattning
 - [samp-query-php](#samp-query-php)
-    - [🌐 Språk](#-språk)
-  - [📋 Sammanfattning](#-sammanfattning)
-  - [🎯 Funktioner](#-funktioner)
-  - [🛠️ Installation](#️-installation)
-  - [🚀 Användning](#-användning)
+    - [Språk](#språk)
+  - [Sammanfattning](#sammanfattning)
+  - [Funktioner](#funktioner)
+  - [Installation](#️installation)
+  - [Användning](#användning)
     - [Enkel användningsexempel](#enkel-användningsexempel)
     - [Exempel med flera servrar](#exempel-med-flera-servrar)
-  - [🧩 Tillgängliga Metoder](#-tillgängliga-metoder)
+  - [Tillgängliga Metoder](#tillgängliga-metoder)
     - [Kontrollera om servern är online](#kontrollera-om-servern-är-online)
     - [Hämta serverns ping](#hämta-serverns-ping)
     - [Hämta serverinformation](#hämta-serverinformation)
@@ -31,17 +31,17 @@
       - [Grundläggande Lista](#grundläggande-lista)
       - [Detaljerad Lista](#detaljerad-lista)
     - [Hämta serverregler](#hämta-serverregler)
-  - [🔍 Tekniska Detaljer](#-tekniska-detaljer)
+  - [Tekniska Detaljer](#tekniska-detaljer)
     - [Återförsökssystem](#återförsökssystem)
     - [Konfigurerbara timeoutar](#konfigurerbara-timeoutar)
     - [Paketbyggande](#paketbyggande)
     - [Datakonvertering](#datakonvertering)
-  - [🔧 Anpassningar och Inställningar](#-anpassningar-och-inställningar)
+  - [Anpassningar och Inställningar](#anpassningar-och-inställningar)
     - [Avancerade timeoutinställningar](#avancerade-timeoutinställningar)
     - [Felmeddelanden och undantagshantering](#felmeddelanden-och-undantagshantering)
-  - [ℹ️ Kontaktinformation](#ℹ️-kontaktinformation)
+  - [Kontaktinformation](#kontaktinformation)
 
-## 🎯 Funktioner
+## Funktioner
 
 - Snabb och effektiv förfrågning av **SA-MP**-servrar.
 - Begäran av grundläggande och detaljerad serverinformation.
@@ -52,7 +52,7 @@
 - Stöd för flera språk för serverinformation.
 - Anpassad begränsning för visning av spelare.
 
-## 🛠️ Installation
+## Installation
 
 Klon repositoryt till din lokala maskin:
 
@@ -60,7 +60,7 @@ Klon repositoryt till din lokala maskin:
 git clone https://github.com/ocalasans/samp-query-php.git
 ```
 
-## 🚀 Användning
+## Användning
 
 Inkludera filen `samp-query.php` i ditt projekt och instansiera klassen `samp_query` genom att ange IP-adressen och porten för **SA-MP**-servern du vill fråga.
 
@@ -110,7 +110,7 @@ foreach ($servrar as $data) {
 }
 ```
 
-## 🧩 Tillgängliga Metoder
+## Tillgängliga Metoder
 
 ### Kontrollera om servern är online
 
@@ -171,7 +171,7 @@ public function Hamta_Regler()
 
 Returnerar en array med serverns regler, där nyckeln är regelnamn och värdet är det associerade värdet för denna regel. Denna metod använder också ett system för försök för att säkerställa att uppgifterna hämtas.
 
-## 🔍 Tekniska Detaljer
+## Tekniska Detaljer
 
 ### Återförsökssystem
 
@@ -200,7 +200,7 @@ private function toInt($data)
 
 Metoden använder bitoperationer för att rekonstruera heltalsvärdet från de binära data, konvertera de fyra separata delarna av ett heltal till det ursprungliga formatet.
 
-## 🔧 Anpassningar och Inställningar
+## Anpassningar och Inställningar
 
 ### Avancerade timeoutinställningar
 
@@ -224,9 +224,9 @@ if ($server->Hamta_Information() === null) {
 }
 ```
 
-## ℹ️ Kontaktinformation
+## Kontaktinformation
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
 Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Gemenskap: [SA-MP Programming Community©](https://abre.ai/samp-spc)
+Gemenskap: [SA-MP Programming Community](https://abre.ai/samp-spc)
