@@ -17,14 +17,14 @@
 ## Sumário
 
 - [samp-query-php](#samp-query-php)
-    - [🌐 Linguagens](#-linguagens)
-  - [📋 Sumário](#-sumário)
-  - [🎯 Características](#-características)
-  - [🛠️ Instalação](#️-instalação)
-  - [🚀 Uso](#-uso)
+    - [Linguagens](#-linguagens)
+  - [Sumário](#-sumário)
+  - [Características](#-características)
+  - [Instalação](#️-instalação)
+  - [Uso](#-uso)
     - [Exemplo de uso básico](#exemplo-de-uso-básico)
     - [Exemplo com múltiplos servidores](#exemplo-com-múltiplos-servidores)
-  - [🧩 Métodos Disponíveis](#-métodos-disponíveis)
+  - [Métodos Disponíveis](#-métodos-disponíveis)
     - [Verificar se o servidor está online](#verificar-se-o-servidor-está-online)
     - [Obter ping do servidor](#obter-ping-do-servidor)
     - [Obter informações do servidor](#obter-informações-do-servidor)
@@ -32,15 +32,15 @@
       - [Lista Básica](#lista-básica)
       - [Lista Detalhada](#lista-detalhada)
     - [Obter regras do servidor](#obter-regras-do-servidor)
-  - [🔍 Detalhes Técnicos](#-detalhes-técnicos)
+  - [Detalhes Técnicos](#-detalhes-técnicos)
     - [Sistema de tentativas](#sistema-de-tentativas)
     - [Timeouts configuráveis](#timeouts-configuráveis)
     - [Construção de pacotes](#construção-de-pacotes)
     - [Conversão de dados](#conversão-de-dados)
-  - [🔧 Customizações e Configurações](#-customizações-e-configurações)
+  - [Customizações e Configurações](#-customizações-e-configurações)
     - [Configurações avançadas de timeout](#configurações-avançadas-de-timeout)
     - [Mensagens de erro e tratamento de exceções](#mensagens-de-erro-e-tratamento-de-exceções)
-  - [ℹ️ Informações de contato](#ℹ️-informações-de-contato)
+  - [Informações de contato](#informações-de-contato)
 
 ## Características
 
@@ -172,7 +172,7 @@ public function Obter_Regras()
 
 Retorna um array com as regras do servidor, onde a chave é o nome da regra e o valor é o valor associado a essa regra. Esse método também utiliza o sistema de tentativas para assegurar a obtenção dos dados.
 
-## 🔍 Detalhes Técnicos
+## Detalhes Técnicos
 
 ### Sistema de tentativas
 
@@ -201,7 +201,7 @@ private function toInt($data)
 
 O método utiliza operações bit a bit para reconstruir o valor inteiro a partir dos dados binários, convertendo as quatro partes separadas de um número inteiro para o formato original.
 
-## 🔧 Customizações e Configurações
+## Customizações e Configurações
 
 ### Configurações avançadas de timeout
 
