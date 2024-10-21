@@ -2,7 +2,7 @@
 
 **samp-query-php** is a **PHP** **API** developed to query and retrieve information from **SA-MP (San Andreas Multiplayer)** servers. This **API** allows you to check if a server is online, obtain the ping, basic and detailed server information, connected players, and server rules. The **API** also includes an automatic retry system to ensure that the data is reliably obtained.
 
-### 🌐 Languages
+### Languages
 
 - **Português** > [README](https://github.com/ocalasans/samp-query-php) / [Código](https://github.com/ocalasans/samp-query-php/blob/main/samp-query.php).
 - **Español** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Espanol) / [Código](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Espanol/samp-query.php).
@@ -14,17 +14,17 @@
 - **Italiano** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano) / [Codice](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk) / [Koda](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk/samp-query.php).
 
-## 📋 Summary
+## Summary
 
 - [samp-query-php](#samp-query-php)
-    - [🌐 Languages](#-languages)
-  - [📋 Summary](#-summary)
-  - [🎯 Features](#-features)
-  - [🛠️ Installation](#️-installation)
-  - [🚀 Usage](#-usage)
+    - [Languages](#languages)
+  - [Summary](#summary)
+  - [Features](#features)
+  - [Installation](#️installation)
+  - [Usage](#usage)
     - [Basic usage example](#basic-usage-example)
     - [Example with Multiple Servers](#example-with-multiple-servers)
-  - [🧩 Available Methods](#-available-methods)
+  - [Available Methods](#available-methods)
     - [Check if the server is online](#check-if-the-server-is-online)
     - [Get server ping](#get-server-ping)
     - [Get server information](#get-server-information)
@@ -32,17 +32,17 @@
       - [Basic List](#basic-list)
       - [Detailed List](#detailed-list)
     - [Get Server Rules](#get-server-rules)
-  - [🔍 Technical Details](#-technical-details)
+  - [Technical Details](#technical-details)
     - [Retry System](#retry-system)
     - [Configurable Timeouts](#configurable-timeouts)
     - [Packet Construction](#packet-construction)
     - [Data Conversion](#data-conversion)
-  - [🔧 Customizations and Configurations](#-customizations-and-configurations)
+  - [Customizations and Configurations](#customizations-and-configurations)
     - [Advanced Timeout Settings](#advanced-timeout-settings)
     - [Error Messages and Exception Handling](#error-messages-and-exception-handling)
-  - [ℹ️ Contact Information](#ℹ️-contact-information)
+  - [Contact Information](#contact-information)
 
-## 🎯 Features
+## Features
 
 - Quick and efficient querying of **SA-MP** servers.
 - Request basic and detailed server information.
@@ -53,7 +53,7 @@
 - Multilingual support for server information.
 - Customizable limitation for player display.
 
-## 🛠️ Installation
+## Installation
 
 Clone the repository to your local machine:
 
@@ -61,7 +61,7 @@ Clone the repository to your local machine:
 git clone https://github.com/ocalasans/samp-query-php.git
 ```
 
-## 🚀 Usage
+## Usage
 
 Include the `samp-query.php` file in your project and instantiate the `samp_query` class, passing the IP address and port of the **SA-MP** server you want to query.
 
@@ -111,7 +111,7 @@ foreach ($servers as $data) {
 }
 ```
 
-## 🧩 Available Methods
+## Available Methods
 
 ### Check if the server is online
 
@@ -172,7 +172,7 @@ public function Get_Rules()
 
 Returns an array with the server rules, where the key is the rule name and the value is the value associated with that rule. This method also uses a retry system to ensure data retrieval.
 
-## 🔍 Technical Details
+## Technical Details
 
 ### Retry System
 
@@ -201,7 +201,7 @@ private function toInt($data)
 
 The method uses bitwise operations to reconstruct the integer value from the binary data, converting the four separated parts of an integer back to the original format.
 
-## 🔧 Customizations and Configurations
+## Customizations and Configurations
 
 ### Advanced Timeout Settings
 
@@ -225,9 +225,9 @@ if ($server->Get_Information() === null) {
 }
 ```
 
-## ℹ️ Contact Information
+## Contact Information
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
 Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Community: [SA-MP Programming Community©](https://abre.ai/samp-spc)
+Community: [SA-MP Programming Community](https://abre.ai/samp-spc)
