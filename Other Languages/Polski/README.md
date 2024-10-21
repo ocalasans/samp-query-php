@@ -2,7 +2,7 @@
 
 **samp-query-php** to **API** w **PHP** stworzona do uzyskiwania informacji o serwerach **SA-MP (San Andreas Multiplayer)**. Ta **API** pozwala na sprawdzenie, czy serwer jest online, uzyskanie pingu, podstawowych i szczegółowych informacji o serwerze, połączonych graczach oraz zasadach serwera. **API** zawiera również system automatycznych prób, aby zapewnić niezawodne uzyskiwanie danych.
 
-### 🌐 Języki
+### Języki
 
 - **Português** > [README](https://github.com/ocalasans/samp-query-php) / [Código](https://github.com/ocalasans/samp-query-php/blob/main/samp-query.php).
 - **English** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English) / [Code](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English/samp-query.php).
@@ -14,16 +14,16 @@
 - **Italiano** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano) / [Codice](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk) / [Koda](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk/samp-query.php).
 
-## 📋 Podsumowanie
+## Podsumowanie
 - [samp-query-php](#samp-query-php)
-    - [🌐 Języki](#-języki)
-  - [📋 Podsumowanie](#-podsumowanie)
-  - [🎯 Cechy](#-cechy)
-  - [🛠️ Instalacja](#️-instalacja)
-  - [🚀 Użycie](#-użycie)
+    - [Języki](#języki)
+  - [Podsumowanie](#podsumowanie)
+  - [Cechy](#cechy)
+  - [Instalacja](#️instalacja)
+  - [Użycie](#użycie)
     - [Przykład podstawowego użycia](#przykład-podstawowego-użycia)
     - [Przykład z wieloma serwerami](#przykład-z-wieloma-serwerami)
-  - [🧩 Dostępne Metody](#-dostępne-metody)
+  - [Dostępne Metody](#dostępne-metody)
     - [Sprawdź, czy serwer jest online](#sprawdź-czy-serwer-jest-online)
     - [Uzyskaj ping serwera](#uzyskaj-ping-serwera)
     - [Uzyskaj informacje o serwerze](#uzyskaj-informacje-o-serwerze)
@@ -31,17 +31,17 @@
       - [Lista Podstawowa](#lista-podstawowa)
       - [Lista Szczegółowa](#lista-szczegółowa)
     - [Uzyskaj zasady serwera](#uzyskaj-zasady-serwera)
-  - [🔍 Szczegóły Techniczne](#-szczegóły-techniczne)
+  - [Szczegóły Techniczne](#szczegóły-techniczne)
     - [System prób](#system-prób)
     - [Konfigurowalne limity czasowe](#konfigurowalne-limity-czasowe)
     - [Budowanie pakietów](#budowanie-pakietów)
     - [Konwersja danych](#konwersja-danych)
-  - [🔧 Dostosowywanie i Konfiguracje](#-dostosowywanie-i-konfiguracje)
+  - [Dostosowywanie i Konfiguracje](#dostosowywanie-i-konfiguracje)
     - [Zaawansowane ustawienia limitów czasowych](#zaawansowane-ustawienia-limitów-czasowych)
     - [Komunikaty o błędach i obsługa wyjątków](#komunikaty-o-błędach-i-obsługa-wyjątków)
-  - [ℹ️ Informacje kontaktowe](#ℹ️-informacje-kontaktowe)
+  - [Informacje kontaktowe](#informacje-kontaktowe)
 
-## 🎯 Cechy
+## Cechy
 
 - Szybkie i efektywne zapytania do serwerów **SA-MP**.
 - Pobieranie podstawowych i szczegółowych informacji o serwerze.
@@ -52,7 +52,7 @@
 - Wsparcie dla wielu języków w informacji o serwerze.
 - Dostosowane limity wyświetlania graczy.
 
-## 🛠️ Instalacja
+## Instalacja
 
 Sklonuj repozytorium na swoją lokalną maszynę:
 
@@ -60,7 +60,7 @@ Sklonuj repozytorium na swoją lokalną maszynę:
 git clone https://github.com/ocalasans/samp-query-php.git
 ```
 
-## 🚀 Użycie
+## Użycie
 
 Dodaj plik `samp-query.php` do swojego projektu i zainicjuj klasę `samp_query`, przekazując adres IP i port serwera **SA-MP**, który chcesz zapytać.
 
@@ -110,7 +110,7 @@ foreach ($serwery as $dane) {
 }
 ```
 
-## 🧩 Dostępne Metody
+## Dostępne Metody
 
 ### Sprawdź, czy serwer jest online
 
@@ -171,7 +171,7 @@ public function Uzyskaj_Zasady()
 
 Zwraca tablicę z zasadami serwera, gdzie klucz to nazwa zasady, a wartość to wartość przypisana do tej zasady. Ta metoda również wykorzystuje system prób, aby zapewnić uzyskanie danych.
 
-## 🔍 Szczegóły Techniczne
+## Szczegóły Techniczne
 
 ### System prób
 
@@ -200,7 +200,7 @@ private function toInt($data)
 
 Metoda wykorzystuje operacje bitowe do odbudowy wartości całkowitej z danych binarnych, konwertując cztery oddzielne części liczby całkowitej na pierwotny format.
 
-## 🔧 Dostosowywanie i Konfiguracje
+## Dostosowywanie i Konfiguracje
 
 ### Zaawansowane ustawienia limitów czasowych
 
@@ -224,9 +224,9 @@ if ($server->Uzyskac_Informacja() === null) {
 }
 ```
 
-## ℹ️ Informacje kontaktowe
+## Informacje kontaktowe
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
 Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Społeczność: [SA-MP Programming Community©](https://abre.ai/samp-spc)
+Społeczność: [SA-MP Programming Community](https://abre.ai/samp-spc)
