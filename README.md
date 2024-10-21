@@ -2,7 +2,7 @@
 
 **samp-query-php** é uma **API** em **PHP** desenvolvida para consultar e obter informações de servidores **SA-MP (San Andreas Multiplayer)**. Esta **API** permite que você verifique se um servidor está online, obtenha o ping, informações básicas e detalhadas sobre o servidor, jogadores conectados e regras do servidor. A **API** também inclui um sistema de tentativas automáticas para garantir que os dados sejam obtidos de forma confiável.
 
-### 🌐 Linguagens
+### Linguagens
 
 - **English** > [README](Other%20Languages/English) / [Code](Other%20Languages/English/samp-query.php).
 - **Español** > [README](Other%20Languages/Espanol) / [Código](Other%20Languages/Espanol/samp-query.php).
@@ -14,7 +14,7 @@
 - **Italiano** > [README](Other%20Languages/Italiano) / [Codice](Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](Other%20Languages/Svensk) / [Koda](Other%20Languages/Svensk/samp-query.php).
 
-## 📋 Sumário
+## Sumário
 
 - [samp-query-php](#samp-query-php)
     - [🌐 Linguagens](#-linguagens)
@@ -42,7 +42,7 @@
     - [Mensagens de erro e tratamento de exceções](#mensagens-de-erro-e-tratamento-de-exceções)
   - [ℹ️ Informações de contato](#ℹ️-informações-de-contato)
 
-## 🎯 Características
+## Características
 
 - Consulta rápida e eficiente de servidores **SA-MP**.
 - Requisição de informações básicas e detalhadas do servidor.
@@ -53,7 +53,7 @@
 - Suporte a múltiplos idiomas para informações do servidor.
 - Limitação personalizada para a exibição de jogadores.
 
-## 🛠️ Instalação
+## Instalação
 
 Clone o repositório para sua máquina local:
 
@@ -61,7 +61,7 @@ Clone o repositório para sua máquina local:
 git clone https://github.com/ocalasans/samp-query-php.git
 ```
 
-## 🚀 Uso
+## Uso
 
 Inclua o arquivo `samp-query.php` no seu projeto e instancie a classe `samp_query` passando o endereço IP e a porta do servidor **SA-MP** que deseja consultar.
 
@@ -111,7 +111,7 @@ foreach ($servidores as $dados) {
 }
 ```
 
-## 🧩 Métodos Disponíveis
+## Métodos Disponíveis
 
 ### Verificar se o servidor está online
 
@@ -225,9 +225,9 @@ if ($server->Obter_Informacoes() === null) {
 }
 ```
 
-## ℹ️ Informações de contato
+## Informações de contato
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
 Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Comunidade: [SA-MP Programming Community©](https://abre.ai/samp-spc)
+Comunidade: [SA-MP Programming Community](https://abre.ai/samp-spc)
