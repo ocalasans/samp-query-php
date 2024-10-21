@@ -2,7 +2,7 @@
 
 **samp-query-php** ist eine **PHP-API**, die entwickelt wurde, um Informationen von **SA-MP (San Andreas Multiplayer)**-Servern abzufragen und zu erhalten. Diese **API** ermöglicht es Ihnen, zu überprüfen, ob ein Server online ist, den Ping sowie grundlegende und detaillierte Informationen über den Server, verbundene Spieler und Serverregeln zu erhalten. Die **API** enthält auch ein automatisches Wiederholungssystem, um sicherzustellen, dass die Daten zuverlässig abgerufen werden.
 
-### 🌐 Sprachen
+### Sprachen
 
 - **Português** > [README](https://github.com/ocalasans/samp-query-php) / [Código](https://github.com/ocalasans/samp-query-php/blob/main/samp-query.php).
 - **English** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English) / [Code](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English/samp-query.php).
@@ -14,17 +14,17 @@
 - **Italiano** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano) / [Codice](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk) / [Koda](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk/samp-query.php).
 
-## 📋 Inhaltsverzeichnis
+## Inhaltsverzeichnis
 
 - [samp-query-php](#samp-query-php)
-    - [🌐 Sprachen](#-sprachen)
-  - [📋 Inhaltsverzeichnis](#-inhaltsverzeichnis)
-  - [🎯 Eigenschaften](#-eigenschaften)
-  - [🛠️ Installation](#️-installation)
-  - [🚀 Verwendung](#-verwendung)
+    - [Sprachen](#-sprachen)
+  - [Inhaltsverzeichnis](#-inhaltsverzeichnis)
+  - [Eigenschaften](#-eigenschaften)
+  - [Installation](#️-installation)
+  - [Verwendung](#-verwendung)
     - [Beispiel für die grundlegende Verwendung](#beispiel-für-die-grundlegende-verwendung)
     - [Beispiel mit mehreren Servern](#beispiel-mit-mehreren-servern)
-  - [🧩 Verfügbare Methoden](#-verfügbare-methoden)
+  - [Verfügbare Methoden](#-verfügbare-methoden)
     - [Überprüfen, ob der Server online ist](#überprüfen-ob-der-server-online-ist)
     - [Ping des Servers abrufen](#ping-des-servers-abrufen)
     - [Serverinformationen abrufen](#serverinformationen-abrufen)
@@ -32,17 +32,17 @@
       - [Grundlegende Liste](#grundlegende-liste)
       - [Detaillierte Liste](#detaillierte-liste)
     - [Serverregeln abrufen](#serverregeln-abrufen)
-- [🔍 Technische Details](#-technische-details)
+- [Technische Details](#-technische-details)
     - [Versuchssystem](#versuchssystem)
     - [Konfigurierbare Timeouts](#konfigurierbare-timeouts)
     - [Paketkonstruktion](#paketkonstruktion)
     - [Datenkonvertierung](#datenkonvertierung)
-  - [🔧 Anpassungen und Konfigurationen](#-anpassungen-und-konfigurationen)
+  - [Anpassungen und Konfigurationen](#-anpassungen-und-konfigurationen)
     - [Erweiterte Timeout-Einstellungen](#erweiterte-timeout-einstellungen)
     - [Fehlermeldungen und Ausnahmebehandlung](#fehlermeldungen-und-ausnahmebehandlung)
-  - [ℹ️ Kontaktinformationen](#ℹ️-kontaktinformationen)
+  - [Kontaktinformationen](#kontaktinformationen)
 
-## 🎯 Eigenschaften
+## Eigenschaften
 
 - Schnelle und effiziente Abfrage von **SA-MP**-Servern.
 - Abruf von grundlegenden und detaillierten Informationen des Servers.
@@ -53,7 +53,7 @@
 - Unterstützung für mehrere Sprachen bei den Serverinformationen.
 - Benutzerdefinierte Begrenzung für die Anzeige von Spielern.
 
-## 🛠️ Installation
+## Installation
 
 Klonen Sie das Repository auf Ihren lokalen Rechner:
 
@@ -61,7 +61,7 @@ Klonen Sie das Repository auf Ihren lokalen Rechner:
 git clone https://github.com/ocalasans/samp-query-php.git
 ```
 
-## 🚀 Verwendung
+## Verwendung
 
 Fügen Sie die Datei `samp-query.php` in Ihr Projekt ein und erstellen Sie eine Instanz der Klasse `samp_query`, indem Sie die IP-Adresse und den Port des **SA-MP**-Servers übergeben, den Sie abfragen möchten.
 
@@ -111,7 +111,7 @@ foreach ($server_0 as $daten) {
 }
 ```
 
-## 🧩 Verfügbare Methoden
+## Verfügbare Methoden
 
 ### Überprüfen, ob der Server online ist
 
@@ -172,7 +172,7 @@ public function Abfragen_Regeln()
 
 Gibt ein Array mit den Serverregeln zurück, wobei der Schlüssel der Name der Regel und der Wert der mit dieser Regel verbundene Wert ist. Diese Methode verwendet ebenfalls das Versuchssystem, um die Datenbeschaffung sicherzustellen.
 
-# 🔍 Technische Details
+# Technische Details
 
 ### Versuchssystem
 
@@ -201,7 +201,7 @@ private function toInt($data)
 
 Die Methode verwendet Bit-Operationen, um den Ganzwert aus den binären Daten wiederherzustellen, indem die vier getrennten Teile einer Ganzzahl in das ursprüngliche Format konvertiert werden.
 
-## 🔧 Anpassungen und Konfigurationen
+## Anpassungen und Konfigurationen
 
 ### Erweiterte Timeout-Einstellungen
 
@@ -225,9 +225,9 @@ if ($server->Abfragen_Informationen() === null) {
 }
 ```
 
-## ℹ️ Kontaktinformationen
+## Kontaktinformationen
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
 Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Gemeinschaft: [SA-MP Programming Community©](https://abre.ai/samp-spc)
+Gemeinschaft: [SA-MP Programming Community](https://abre.ai/samp-spc)
