@@ -2,7 +2,7 @@
 
 **samp-query-php** est une **API** en **PHP** développée pour interroger et obtenir des informations sur les serveurs **SA-MP (San Andreas Multiplayer)**. Cette **API** vous permet de vérifier si un serveur est en ligne, d'obtenir le ping, des informations de base et détaillées sur le serveur, les joueurs connectés et les règles du serveur. L'**API** inclut également un système de tentatives automatiques pour garantir que les données sont obtenues de manière fiable.
 
-### 🌐 Langages
+### Langages
 
 - **Português** > [README](https://github.com/ocalasans/samp-query-php) / [Código](https://github.com/ocalasans/samp-query-php/blob/main/samp-query.php).
 - **English** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English) / [Code](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English/samp-query.php).
@@ -14,16 +14,16 @@
 - **Italiano** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano) / [Codice](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk) / [Koda](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk/samp-query.php).
 
-## 📋 Sommaire
+## Sommaire
 - [samp-query-php](#samp-query-php)
-    - [🌐 Langages](#-langages)
-  - [📋 Sommaire](#-sommaire)
-  - [🎯 Caractéristiques](#-caractéristiques)
-  - [🛠️ Installation](#️-installation)
-  - [🚀 Utilisation](#-utilisation)
+    - [Langages](#langages)
+  - [Sommaire](#sommaire)
+  - [Caractéristiques](#caractéristiques)
+  - [Installation](#️installation)
+  - [Utilisation](#utilisation)
     - [Exemple d'utilisation de base](#exemple-dutilisation-de-base)
     - [Exemple avec plusieurs serveurs](#exemple-avec-plusieurs-serveurs)
-  - [🧩 Méthodes Disponibles](#-méthodes-disponibles)
+  - [Méthodes Disponibles](#méthodes-disponibles)
     - [Vérifier si le serveur est en ligne](#vérifier-si-le-serveur-est-en-ligne)
     - [Obtenir le ping du serveur](#obtenir-le-ping-du-serveur)
     - [Obtenir les informations du serveur](#obtenir-les-informations-du-serveur)
@@ -31,17 +31,17 @@
       - [Liste de base](#liste-de-base)
       - [Liste détaillée](#liste-détaillée)
     - [Obtenir les règles du serveur](#obtenir-les-règles-du-serveur)
-  - [🔍 Détails techniques](#-détails-techniques)
+  - [Détails techniques](#détails-techniques)
     - [Système de tentatives](#système-de-tentatives)
     - [Timeouts configurables](#timeouts-configurables)
     - [Construction des paquets](#construction-des-paquets)
     - [Conversion des données](#conversion-des-données)
-  - [🔧 Personnalisations et configurations](#-personnalisations-et-configurations)
+  - [Personnalisations et configurations](#personnalisations-et-configurations)
     - [Paramètres avancés de timeout](#paramètres-avancés-de-timeout)
     - [Messages d'erreur et gestion des exceptions](#messages-derreur-et-gestion-des-exceptions)
-  - [ℹ️ Informations de contact](#ℹ️-informations-de-contact)
+  - [Informations de contact](#informations-de-contact)
 
-## 🎯 Caractéristiques
+## Caractéristiques
 
 - Consultation rapide et efficace des serveurs **SA-MP**.
 - Demande d'informations de base et détaillées sur le serveur.
@@ -52,7 +52,7 @@
 - Support de plusieurs langues pour les informations du serveur.
 - Limitation personnalisée pour l'affichage des joueurs.
 
-## 🛠️ Installation
+## Installation
 
 Clonez le dépôt sur votre machine locale:
 
@@ -60,7 +60,7 @@ Clonez le dépôt sur votre machine locale:
 git clone https://github.com/ocalasans/samp-query-php.git
 ```
 
-## 🚀 Utilisation
+## Utilisation
 
 Incluez le fichier `samp-query.php` dans votre projet et instanciez la classe `samp_query` en passant l'adresse IP et le port du serveur **SA-MP** que vous souhaitez consulter.
 
@@ -110,7 +110,7 @@ foreach ($serveurs as $données) {
 }
 ```
 
-## 🧩 Méthodes Disponibles
+## Méthodes Disponibles
 
 ### Vérifier si le serveur est en ligne
 
@@ -171,7 +171,7 @@ public function Obtenir_Regles()
 
 Retourne un tableau avec les règles du serveur, où la clé est le nom de la règle et la valeur est la valeur associée à cette règle. Cette méthode utilise également le système de tentatives pour assurer l'obtention des données.
 
-## 🔍 Détails techniques
+## Détails techniques
 
 ### Système de tentatives
 
@@ -200,7 +200,7 @@ private function toInt($data)
 
 La méthode utilise des opérations bit à bit pour reconstruire la valeur entière à partir des données binaires, convertissant les quatre parties séparées d'un nombre entier au format original.
 
-## 🔧 Personnalisations et configurations
+## Personnalisations et configurations
 
 ### Paramètres avancés de timeout
 
@@ -224,9 +224,9 @@ if ($server->Obtenir_Informations() === null) {
 }
 ```
 
-## ℹ️ Informations de contact
+## Informations de contact
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
 Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Communauté: [SA-MP Programming Community©](https://abre.ai/samp-spc)
+Communauté: [SA-MP Programming Community](https://abre.ai/samp-spc)
