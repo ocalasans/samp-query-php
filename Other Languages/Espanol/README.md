@@ -2,7 +2,7 @@
 
 **samp-query-php** es una **API** en **PHP** desarrollada para consultar y obtener información de servidores **SA-MP (San Andreas Multiplayer)**. Esta **API** permite que verifiques si un servidor está en línea, obtengas el ping, información básica y detallada sobre el servidor, jugadores conectados y reglas del servidor. La **API** también incluye un sistema de intentos automáticos para garantizar que los datos se obtengan de manera confiable.
 
-### 🌐 Lenguajes
+### Lenguajes
 
 - **Português** > [README](https://github.com/ocalasans/samp-query-php) / [Código](https://github.com/ocalasans/samp-query-php/blob/main/samp-query.php).
 - **English** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English) / [Code](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/English/samp-query.php).
@@ -14,17 +14,17 @@
 - **Italiano** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano) / [Codice](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk) / [Koda](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk/samp-query.php).
   
-## 📋 Índice
+## Índice
 
 - [samp-query-php](#samp-query-php)
-    - [🌐 Lenguajes](#-lenguajes)
-  - [📋 Índice](#-índice)
-  - [🎯 Características](#-características)
-  - [🛠️ Instalación](#️-instalación)
-  - [🚀 Uso](#-uso)
+    - [Lenguajes](#lenguajes)
+  - [Índice](#índice)
+  - [Características](#características)
+  - [Instalación](#️instalación)
+  - [Uso](#uso)
     - [Ejemplo de uso básico](#ejemplo-de-uso-básico)
     - [Ejemplo con múltiples servidores](#ejemplo-con-múltiples-servidores)
-  - [🧩 Métodos Disponibles](#-métodos-disponibles)
+  - [Métodos Disponibles](#métodos-disponibles)
     - [Verificar si el servidor está en línea](#verificar-si-el-servidor-está-en-línea)
     - [Obtener el ping del servidor](#obtener-el-ping-del-servidor)
     - [Obtener información del servidor](#obtener-información-del-servidor)
@@ -32,17 +32,17 @@
       - [Lista Básica](#lista-básica)
       - [Lista Detallada](#lista-detallada)
     - [Obtener reglas del servidor](#obtener-reglas-del-servidor)
-  - [🔍 Detalles Técnicos](#-detalles-técnicos)
+  - [Detalles Técnicos](#detalles-técnicos)
     - [Sistema de intentos](#sistema-de-intentos)
     - [Timeouts configurables](#timeouts-configurables)
     - [Construcción de paquetes](#construcción-de-paquetes)
     - [Conversión de datos](#conversión-de-datos)
-  - [🔧 Personalizaciones y Configuraciones](#-personalizaciones-y-configuraciones)
+  - [Personalizaciones y Configuraciones](#personalizaciones-y-configuraciones)
     - [Configuraciones avanzadas de timeout](#configuraciones-avanzadas-de-timeout)
     - [Mensajes de error y manejo de excepciones](#mensajes-de-error-y-manejo-de-excepciones)
-  - [ℹ️ Información de contacto](#ℹ️-información-de-contacto)
+  - [Información de contacto](#información-de-contacto)
 
-## 🎯 Características
+## Características
 
 - Consulta rápida y eficiente de servidores **SA-MP**.
 - Solicitud de información básica y detallada del servidor.
@@ -53,7 +53,7 @@
 - Soporte para múltiples idiomas en la información del servidor.
 - Limitación personalizada para la visualización de jugadores.
 
-## 🛠️ Instalación
+## Instalación
 
 Clona el repositorio en tu máquina local:
 
@@ -61,7 +61,7 @@ Clona el repositorio en tu máquina local:
 git clone https://github.com/ocalasans/samp-query-php.git
 ```
 
-## 🚀 Uso
+## Uso
 
 Incluye el archivo `samp-query.php` en tu proyecto e instancia la clase `samp_query` pasando la dirección IP y el puerto del servidor **SA-MP** que deseas consultar.
 
@@ -111,7 +111,7 @@ foreach ($servidores as $datos) {
 }
 ```
 
-## 🧩 Métodos Disponibles
+## Métodos Disponibles
 
 ### Verificar si el servidor está en línea
 
@@ -172,7 +172,7 @@ public function Obtener_Reglas()
 
 Devuelve un array con las reglas del servidor, donde la clave es el nombre de la regla y el valor es el valor asociado a esa regla. Este método también utiliza el sistema de intentos para asegurar la obtención de los datos.
 
-## 🔍 Detalles Técnicos
+## Detalles Técnicos
 
 ### Sistema de intentos
 
@@ -201,7 +201,7 @@ private function toInt($data)
 
 El método utiliza operaciones bit a bit para reconstruir el valor entero a partir de los datos binarios, convirtiendo las cuatro partes separadas de un número entero al formato original.
 
-## 🔧 Personalizaciones y Configuraciones
+## Personalizaciones y Configuraciones
 
 ### Configuraciones avanzadas de timeout
 
@@ -225,9 +225,9 @@ if ($server->Obtener_Informacion() === null) {
 }
 ```
 
-## ℹ️ Información de contacto
+## Información de contacto
 
 Instagram: [ocalasans](https://instagram.com/ocalasans)   
 YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
 Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Comunidad: [SA-MP Programming Community©](https://abre.ai/samp-spc)
+Comunidad: [SA-MP Programming Community](https://abre.ai/samp-spc)
