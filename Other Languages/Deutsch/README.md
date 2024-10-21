@@ -32,7 +32,7 @@
       - [Grundlegende Liste](#grundlegende-liste)
       - [Detaillierte Liste](#detaillierte-liste)
     - [Serverregeln abrufen](#serverregeln-abrufen)
-- [Technische Details](#technische-details)
+  - [Technische Details](#technische-details)
     - [Versuchssystem](#versuchssystem)
     - [Konfigurierbare Timeouts](#konfigurierbare-timeouts)
     - [Paketkonstruktion](#paketkonstruktion)
