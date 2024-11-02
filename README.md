@@ -1,4 +1,4 @@
-# samp-query-php
+# SA-MP Query PHP
 
 **samp-query-php** é uma **API** em **PHP** desenvolvida para consultar e obter informações de servidores **SA-MP (San Andreas Multiplayer)**. Esta **API** permite que você verifique se um servidor está online, obtenha o ping, informações básicas e detalhadas sobre o servidor, jogadores conectados e regras do servidor. A **API** também inclui um sistema de tentativas automáticas para garantir que os dados sejam obtidos de forma confiável.
 
@@ -14,9 +14,9 @@
 - **Italiano** > [README](Other%20Languages/Italiano) / [Codice](Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](Other%20Languages/Svensk) / [Koda](Other%20Languages/Svensk/samp-query.php).
 
-## Sumário
+## Índice
 
-- [samp-query-php](#samp-query-php)
+- [SA-MP Query Node](#sa-mp-query-php)
     - [Linguagens](#linguagens)
   - [Sumário](#sumário)
   - [Características](#características)
