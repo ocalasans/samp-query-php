@@ -16,7 +16,7 @@
 
 ## Índice
 
-- [SA-MP Query Node](#sa-mp-query-php)
+- [SA-MP Query PHP](#sa-mp-query-php)
     - [Linguagens](#linguagens)
   - [Sumário](#sumário)
   - [Características](#características)
