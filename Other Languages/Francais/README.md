@@ -1,4 +1,4 @@
-# samp-query-php
+# SA-MP Query PHP
 
 **samp-query-php** est une **API** en **PHP** développée pour interroger et obtenir des informations sur les serveurs **SA-MP (San Andreas Multiplayer)**. Cette **API** vous permet de vérifier si un serveur est en ligne, d'obtenir le ping, des informations de base et détaillées sur le serveur, les joueurs connectés et les règles du serveur. L'**API** inclut également un système de tentatives automatiques pour garantir que les données sont obtenues de manière fiable.
 
@@ -14,8 +14,8 @@
 - **Italiano** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano) / [Codice](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Italiano/samp-query.php).
 - **Svensk** > [README](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk) / [Koda](https://github.com/ocalasans/samp-query-php/blob/main/Other%20Languages/Svensk/samp-query.php).
 
-## Sommaire
-- [samp-query-php](#samp-query-php)
+## Indice
+- [SA-MP Query PHP](#sa-mp-query-php)
     - [Langages](#langages)
   - [Sommaire](#sommaire)
   - [Caractéristiques](#caractéristiques)
