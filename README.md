@@ -1,26 +1,26 @@
-# SA-MP Query PHP
+# samp-query-php
 
 **samp-query-php** é uma **API** em **PHP** desenvolvida para consultar e obter informações de servidores **SA-MP (San Andreas Multiplayer)**. Esta **API** permite que você verifique se um servidor está online, obtenha o ping, informações básicas e detalhadas sobre o servidor, jogadores conectados e regras do servidor. A **API** também inclui um sistema de tentativas automáticas para garantir que os dados sejam obtidos de forma confiável.
 
-### Linguagens
+### Idiomas
 
-- **English** > [README](Other%20Languages/English) / [Code](Other%20Languages/English/samp-query.php).
-- **Español** > [README](Other%20Languages/Espanol) / [Código](Other%20Languages/Espanol/samp-query.php).
-- **Polski** > [README](Other%20Languages/Polski) / [Kod](Other%20Languages/Polski/samp-query.php).
-- **Türk** > [README](Other%20Languages/Turk) / [Kod](Other%20Languages/Turk/samp-query.php).
-- **Deutsch** > [README](Other%20Languages/Deutsch) / [Code](Other%20Languages/Deutsch/samp-query.php).
-- **Русский** > [README](Other%20Languages/Русский) / [Код](Other%20Languages/Русский/samp-query.php).
-- **Français** > [README](Other%20Languages/Francais) / [Code](Other%20Languages/Francais/samp-query.php).
-- **Italiano** > [README](Other%20Languages/Italiano) / [Codice](Other%20Languages/Italiano/samp-query.php).
-- **Svensk** > [README](Other%20Languages/Svensk) / [Koda](Other%20Languages/Svensk/samp-query.php).
+- Deutsch: [README](../Deutsch/README.md)
+- English: [README](../English/README.md)
+- Español: [README](../Espanol/README.md)
+- Français: [README](../Francais/README.md)
+- Italiano: [README](../Italiano/README.md)
+- Polski: [README](../Polski/README.md)
+- Русский: [README](../Русский/README.md)
+- Svenska: [README](../Svenska/README.md)
+- Türkçe: [README](../Turkce/README.md)
 
 ## Índice
 
-- [SA-MP Query PHP](#sa-mp-query-php)
-    - [Linguagens](#linguagens)
-  - [Sumário](#sumário)
+- [samp-query-php](#samp-query-php)
+    - [Idiomas](#idiomas)
+  - [Índice](#índice)
   - [Características](#características)
-  - [Instalação](#️instalação)
+  - [Instalação](#instalação)
   - [Uso](#uso)
     - [Exemplo de uso básico](#exemplo-de-uso-básico)
     - [Exemplo com múltiplos servidores](#exemplo-com-múltiplos-servidores)
@@ -40,7 +40,8 @@
   - [Customizações e Configurações](#customizações-e-configurações)
     - [Configurações avançadas de timeout](#configurações-avançadas-de-timeout)
     - [Mensagens de erro e tratamento de exceções](#mensagens-de-erro-e-tratamento-de-exceções)
-  - [Informações de contato](#informações-de-contato)
+  - [Licença](#licença)
+    - [Condições:](#condições)
 
 ## Características
 
@@ -63,27 +64,27 @@ git clone https://github.com/ocalasans/samp-query-php.git
 
 ## Uso
 
-Inclua o arquivo `samp-query.php` no seu projeto e instancie a classe `samp_query` passando o endereço IP e a porta do servidor **SA-MP** que deseja consultar.
+Inclua o arquivo `samp_query.php` no seu projeto e instancie a classe `Samp_Query` passando o endereço IP e a porta do servidor **SA-MP** que deseja consultar.
 
 ### Exemplo de uso básico
 
 ```php
-require 'samp-query.php';
+require 'samp_query.php';
 
-$server = new samp_query('127.0.0.1', 7777);
+$server = new Samp_Query('127.0.0.1', 7777);
 
-if ($server->Esta_Online()) {
+if ($server->Is_Online()) {
     echo "Servidor está online!";
-    echo "Ping: " . $server->Obter_Ping() . " ms";
+    echo "Ping: " . $server->Get_Ping() . " ms";
     
-    $info = $server->Obter_Informacoes();
+    $info = $server->Get_Information();
     print_r($info);
     
-    $jogadores = $server->Obter_Jogadores_0();
-    print_r($jogadores);
+    $players = $server->Get_Players_0();
+    print_r($players);
     
-    $regras = $server->Obter_Regras();
-    print_r($regras);
+    $rules = $server->Get_Rules();
+    print_r($rules);
 } else {
     echo "Servidor está offline.";
 }
@@ -92,21 +93,21 @@ if ($server->Esta_Online()) {
 ### Exemplo com múltiplos servidores
 
 ```php
-require 'samp-query.php';
+require 'samp_query.php';
 
 $servidores = [
     ['ip' => '127.0.0.1', 'porta' => 7777],
     ['ip' => '192.168.0.1', 'porta' => 7778],
 ];
 
-foreach ($servidores as $dados) {
-    $server = new samp_query($dados['ip'], $dados['porta']);
+foreach ($servers as $data) {
+    $server = new Samp_Query($data['ip'], $data['porta']);
     
-    if ($server->Esta_Online()) {
-        echo "Servidor " . $dados['ip'] . ":" . $dados['porta'] . " está online!";
-        echo "Ping: " . $server->Obter_Ping() . " ms\n";
+    if ($server->Is_Online()) {
+        echo "Servidor " . $data['ip'] . ":" . $data['porta'] . " está online!";
+        echo "Ping: " . $server->Get_Ping() . " ms\n";
     } else {
-        echo "Servidor " . $dados['ip'] . ":" . $dados['porta'] . " está offline.\n";
+        echo "Servidor " . $data['ip'] . ":" . $data['porta'] . " está offline.\n";
     }
 }
 ```
@@ -116,7 +117,7 @@ foreach ($servidores as $dados) {
 ### Verificar se o servidor está online
 
 ```php
-public function Esta_Online()
+public function Is_Online()
 ```
 
 Retorna `true` se o servidor estiver online, caso contrário, `false`. A verificação é realizada ao tentar conectar-se ao servidor e enviar um pacote inicial. Se a conexão falhar, o servidor é considerado offline.
@@ -124,7 +125,7 @@ Retorna `true` se o servidor estiver online, caso contrário, `false`. A verific
 ### Obter ping do servidor
 
 ```php
-public function Obter_Ping()
+public function Get_Ping()
 ```
 
 Retorna o ping do servidor em milissegundos, calculado com base no tempo que leva para o pacote ser enviado e a resposta ser recebida. Se o servidor estiver offline ou não puder obter o ping, retorna `null`.
@@ -132,7 +133,7 @@ Retorna o ping do servidor em milissegundos, calculado com base no tempo que lev
 ### Obter informações do servidor
 
 ```php
-public function Obter_Informacoes()
+public function Get_Information()
 ```
 
 Retorna um array com informações básicas do servidor, como:
@@ -151,7 +152,7 @@ Este método faz uso do sistema de tentativas automáticas para garantir que os 
 #### Lista Básica
 
 ```php
-public function Obter_Jogadores_0()
+public function Get_Players_0()
 ```
 
 Retorna um array com a lista de jogadores conectados, contendo `nickname` e `score` (pontuação) de cada jogador. Esse método é adequado para obter uma visão geral dos jogadores conectados.
@@ -159,7 +160,7 @@ Retorna um array com a lista de jogadores conectados, contendo `nickname` e `sco
 #### Lista Detalhada
 
 ```php
-public function Obter_Jogadores_1()
+public function Get_Players_1()
 ```
 
 Retorna um array com informações detalhadas sobre cada jogador, incluindo `playerid`, `nickname`, `score` e `ping`. Esse método fornece dados mais profundos sobre os jogadores conectados.
@@ -167,7 +168,7 @@ Retorna um array com informações detalhadas sobre cada jogador, incluindo `pla
 ### Obter regras do servidor
 
 ```php
-public function Obter_Regras()
+public function Get_Rules()
 ```
 
 Retorna um array com as regras do servidor, onde a chave é o nome da regra e o valor é o valor associado a essa regra. Esse método também utiliza o sistema de tentativas para assegurar a obtenção dos dados.
@@ -176,11 +177,11 @@ Retorna um array com as regras do servidor, onde a chave é o nome da regra e o 
 
 ### Sistema de tentativas
 
-A API incorpora um sistema de tentativas (`retryLimit`) que permite tentar a obtenção de informações até três vezes antes de desistir. Isso aumenta a confiabilidade, especialmente em situações onde a conexão pode ser instável.
+A API incorpora um sistema de tentativas (`retry_limit`) que permite tentar a obtenção de informações até três vezes antes de desistir. Isso aumenta a confiabilidade, especialmente em situações onde a conexão pode ser instável.
 
 ### Timeouts configuráveis
 
-Ao instanciar a classe `samp_query`, dois tipos de timeouts são configurados:
+Ao instanciar a classe `Samp_Query`, dois tipos de timeouts são configurados:
 
 - `timeouts['connect']`: Define o tempo máximo em segundos para estabelecer uma conexão com o servidor. O padrão é 1 segundo.
 - `timeouts['response']`: Define o tempo máximo em segundos para esperar uma resposta do servidor após o envio de um pacote. O padrão é 120 segundos que já é um tempo extremamente alto.
@@ -193,10 +194,10 @@ Os pacotes de consulta ao servidor **SA-MP** são construídos manualmente, util
 
 ### Conversão de dados
 
-A API inclui um método privado `toInt()` que converte dados binários recebidos do servidor para inteiros. Esse método garante que os dados sejam manipulados corretamente, mesmo em casos de grandes valores.
+A API inclui um método privado `To_Int()` que converte dados binários recebidos do servidor para inteiros. Esse método garante que os dados sejam manipulados corretamente, mesmo em casos de grandes valores.
 
 ```php
-private function toInt($data)
+private function To_Int($data)
 ```
 
 O método utiliza operações bit a bit para reconstruir o valor inteiro a partir dos dados binários, convertendo as quatro partes separadas de um número inteiro para o formato original.
@@ -205,10 +206,10 @@ O método utiliza operações bit a bit para reconstruir o valor inteiro a parti
 
 ### Configurações avançadas de timeout
 
-É possível personalizar os timeouts no momento da instância da classe `samp_query`. Por exemplo, para definir o tempo máximo de conexão para 5 segundos e o tempo de resposta para 60 segundos:
+É possível personalizar os timeouts no momento da instância da classe `Samp_Query`. Por exemplo, para definir o tempo máximo de conexão para 5 segundos e o tempo de resposta para 60 segundos:
 
 ```php
-$server = new samp_query('127.0.0.1', 7777);
+$server = new Samp_Query('127.0.0.1', 7777);
 $server->setTimeouts([
     'connect' => 5,
     'response' => 60
@@ -217,17 +218,27 @@ $server->setTimeouts([
 
 ### Mensagens de erro e tratamento de exceções
 
-A API é projetada para capturar erros e falhas de conexão, retornando mensagens de erro claras em caso de falhas. Por exemplo, se um servidor não puder ser alcançado, a API retorna `null` para métodos como `Obter_Informacoes()`, `Obter_Jogadores_0()`, `Obter_Jogadores_1()` e `Obter_Regras()`.
+A API é projetada para capturar erros e falhas de conexão, retornando mensagens de erro claras em caso de falhas. Por exemplo, se um servidor não puder ser alcançado, a API retorna `null` para métodos como `Get_Information()` e `Get_Rules()`.
 
 ```php
-if ($server->Obter_Informacoes() === null) {
+if ($server->Get_Information() === null) {
     echo "Não foi possível obter informações do servidor.";
 }
 ```
 
-## Informações de contato
+## Licença
 
-Instagram: [ocalasans](https://instagram.com/ocalasans)   
-YouTube: [Calasans](https://www.youtube.com/@ocalasans)   
-Discord: [Calasans](https://discord.com/users/793520050832932884)   
-Comunidade: [SA-MP Programming Community](https://abre.ai/samp-spc)
+Esta API está protegido sob a Licença MIT, que permite:
+- ✔️ Uso comercial e privado
+- ✔️ Modificação do código fonte
+- ✔️ Distribuição do código
+- ✔️ Sublicenciamento
+
+### Condições:
+
+- Manter o aviso de direitos autorais
+- Incluir cópia da licença MIT
+
+Para mais detalhes sobre a licença: https://opensource.org/licenses/MIT
+
+**Copyright (c) Calasans - Todos os direitos reservados**
